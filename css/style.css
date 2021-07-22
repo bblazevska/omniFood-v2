@@ -85,7 +85,8 @@ body{
 }
 .grid{
    display: grid;
-   gap: 9.6rem;
+   row-gap: 9.6rem;
+   column-gap: 6.4rem;
 }
 .grid--2-cols{
    grid-template-columns: repeat(2, 1fr);
@@ -95,6 +96,9 @@ body{
 }
 .margin-right-sm{
    margin-right: 1.6rem !important;
+}
+.padding-top-bottom-lg{
+   padding: 8rem 0 !important;
 }
 .heading{
    letter-spacing: -0.5px;
@@ -117,11 +121,14 @@ body{
 }
 .heading-secondary{
    font-size: 4.4rem;
+   font-weight: 700;
    line-height: 1.2;
    margin-bottom: 9.6rem;
 }
 .step-heading{
-   
+   font-size: 4.2rem;
+   font-weight: 700;
+   margin-bottom: 4.6rem;
 }
 .btn:link,
 .btn:visited{
@@ -259,8 +266,56 @@ body{
 -------HOW IT WORKS -------------*/
 
 .section-how{
-   padding: 9.6px 0;
+   padding: 9.6rem 0;
 }
 
+.step-text-box{
+   align-self: center;
+}
+.step-img-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.step-number{
+   display: inline-block;
+   color: #ddd;
+   font-weight: 600;
+   font-size: 8.6rem;
+   margin-bottom: 3.2rem;
+   letter-spacing: 0.75px;
+}
+.step-text{
+   font-size: 1.8rem;
+   line-height: 1.6;
+   letter-spacing: 0.75px;
+}
+.step-img{
+   width: 35%;
+}
 
+.step-img-box::before,
+.step-img-box::after{
+   content: '';
+   display: block;
+   
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: -1;
+}
 
+.step-img-box::before{
+   width: 60%;
+   /* height: 60%; */
+   padding-bottom: 60%;
+   background-color: #fdf2e9;
+}
+.step-img-box::after{
+   background-color: #fae5d3;
+   width: 45%;
+   padding-bottom: 45%;
+}
