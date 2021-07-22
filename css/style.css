@@ -369,6 +369,7 @@ strong{
 
 /*--------------------------------
 -------MEALS SECTION -------------*/
+
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -464,3 +465,19 @@ strong{
   font-size: 2.4rem;
 }
 
+/*--------------------------------
+-------TESTIMONIALS SECTION -------------*/
+.testimonials-section{
+   background-color: #fdf2e9;
+   display: flex;
+}
+.testimonials-container{
+   display: flex;
+   flex-direction: column;
+}
+/* .testimonials{
+   display: grid;
+} */
+.gallery-item img{
+   width: 100%;
+}
