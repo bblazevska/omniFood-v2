@@ -55,7 +55,7 @@ Medium: 11px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap'); */
 * {
   margin: 0;
   padding: 0;
@@ -125,7 +125,7 @@ strong{
   font-size: 4.4rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 7.6rem;
 }
 .step-heading {
   font-size: 4.2rem;
@@ -140,6 +140,9 @@ strong{
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   transition: all 0.3s;
 }
 .btn--full:link,
@@ -635,3 +638,74 @@ strong{
   color: #6f6f6f;
 }
 
+/*--------------------------------
+------- PROMO SECTION -------------*/
+
+.promo-section{
+  height: 40rem;
+  margin-bottom: 7.6rem;
+}
+.promo-container{
+  display: flex;
+  background-color: #e67e22;
+}
+.mb-24{
+  margin-bottom: 2.4rem;
+}
+.promo-content{
+  width: 75%;
+  padding: 3.2rem 7.4rem;
+}
+.promo-text{
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+.promo-form{
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.promo-form label{
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: block;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.promo-form input,
+.promo-form select{
+  width: 100%;
+  font-size: 1.8rem;
+  border: none;
+  background-color: #fdf2e9;
+  padding: 1.2rem;
+  color: inherit;
+  font-family: inherit;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+.btn--form{
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 9px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn--form:hover{
+  background-color: #fdf2e9;
+  color: #45260a;
+}
+
+.promo-img-container{
+  width: 25%;
+}
+.promo-img{
+  width: 100%;
+  /* height: 100%; */
+}
