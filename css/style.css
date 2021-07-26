@@ -213,7 +213,7 @@ strong{
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 4.8rem;
 }
 .nav-link:link,
 .nav-link:visited {
@@ -585,6 +585,7 @@ strong{
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  line-height: 1.2;
 }
 
 .plan-sign-btn{
