@@ -98,6 +98,9 @@ body {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+.grid--4-cols {
+  grid-template-columns: repeat(4,1fr);
+}
 strong{
    font-weight: 600;
 }
@@ -478,8 +481,8 @@ strong{
   align-items: center;
 }
 
-.container.grid {
-  margin-bottom: 7.4rem;
+.mb-6 {
+  margin-bottom: 6.4rem;
 }
 .all-recipes {
   text-align: center;
@@ -549,7 +552,7 @@ strong{
 }
 
 .pricing-plan{
-  width: 70%;
+  width: 60%;
   border-radius: 7px;
   padding: 4.6rem;
 }
@@ -632,7 +635,6 @@ strong{
 }
 
 .plan-features{
-  grid-template-columns: repeat(4,1fr);
   margin-top: 2.4rem;
 }
 
