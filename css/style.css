@@ -541,6 +541,7 @@ strong{
 .starter-plan{
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
+  justify-self: end;
   
 }
 
@@ -643,25 +644,30 @@ strong{
 ------- PROMO SECTION -------------*/
 
 .promo-section{
-  height: 40rem;
+  /* height: 40rem; */
   margin-bottom: 7.6rem;
 }
 .promo-container{
-  display: flex;
-  background-color: #e67e22;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  /* background-color: #e67e22; */
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 15%);
 }
 .mb-24{
   margin-bottom: 2.4rem;
 }
 .promo-content{
-  width: 75%;
-  padding: 3.2rem 7.4rem;
+  
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
 }
 .promo-text{
   font-size: 1.8rem;
-  color: #333;
   line-height: 1.8;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4.8rem;
 }
 .promo-form{
   column-gap: 3.2rem;
@@ -669,9 +675,8 @@ strong{
 }
 .promo-form label{
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   display: block;
-  color: #333;
   margin-bottom: 1.2rem;
 }
 
@@ -685,7 +690,7 @@ strong{
   color: inherit;
   font-family: inherit;
   border-radius: 9px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 1px 2px rgb(0, 0, 0 /10%);
 }
 .btn--form{
   background-color: #45260a;
@@ -704,7 +709,7 @@ strong{
 }
 
 .promo-img-container{
-  width: 25%;
+  
   background-image: linear-gradient(
     to right bottom,
     rgba(235, 151, 78, 0.35),
